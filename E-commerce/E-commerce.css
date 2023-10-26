@@ -1,0 +1,1319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&family=Roboto:ital@1&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary--text-color : #439fe6;
+    --secondary-text-color :#e068c6;
+    --accent-color:#f79bdb;
+    --accent-color-dark:#e4f1f0;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    color: var(--primary--text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;   
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1rem;
+    color: var(--primary--text-color);
+    /* color: red; */
+}
+
+ul{
+    list-style: none;
+}
+
+h4{
+    color: rgb(86, 110, 105);
+}
+
+/* Utility Class */
+
+.button{
+    color:rgb(51, 55, 59);
+    font-weight: 700;
+    background-color: rgb(205, 214, 214);
+    padding:  10px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    box-shadow: 2px 2px 10px black;
+    margin: 15px 0px;
+}
+.button:hover{
+    color: rgb(241, 241, 241);
+    background-color: #c55fc0;
+}
+
+
+
+
+/*  NavBAr Stylingg ------------------------*/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 2px 2px 12px rgb(128, 81, 81);
+    background-color: var(--accent-color-dark);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+
+}
+
+#navbar{
+    color: var(--primary--text-color);
+    display: flex;
+    justify-content: center;
+    /* gap: 30px; */
+    align-items: center;
+}
+#navbar li a{
+    transition: 0.5s ease;
+    font-weight: 800;
+    padding: 0px 20px;
+}
+
+#navbar li {
+    position: relative;
+    transition: 0.5s ease;
+}
+
+#navbar li a:hover{
+    color: var(--accent-color);
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+
+#navbar li a.active:hover::after{
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: rgb(240, 150, 163);
+    left: 20px;
+    bottom: -3.5px;
+}
+
+.high::after{
+
+        color: rgb(240, 150, 163);
+        content: " ";
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        background-color: rgb(240, 150, 163);
+        left: 20px;
+        bottom: -3.5px;
+    }
+
+
+
+
+
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #000000;
+    font-size: 24px;
+}
+
+
+
+ /* HERO-SECTIOn--------------------- */
+
+.special{
+    color: #088178!important;
+}
+
+#hero{
+    background-image: url(./img/people/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25%  right 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 80px;
+    /* margin: 30px 80px; */
+}
+#hero a {
+    background-image: url(./img/people/button.png);
+    padding: 10px 30px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.5s ease;
+    margin-top: 10px;
+    box-shadow: 3px 3px px black;
+    font-weight: 800;
+}
+
+#hero a:hover{
+    color: rgb(209, 89, 173);
+
+}
+
+#feature{
+    margin: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+#feature div{
+    /* border: 1px solid black; */
+    background-color: rgb(213, 226, 238);
+    border-radius: 10px;
+    padding: 30px 15px;
+    
+    
+}
+
+#feature div h4{
+    margin: 10px 0px 5px 0px;
+    text-align: center;
+    padding: 0px 0px;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fddde4;
+    cursor: pointer;
+}
+#feature div h4:hover{
+    background-color: #dfafb9;
+
+}
+
+#feature div:nth-child(2) h4{
+    cursor: pointer;
+    background-color: #d6ddc1;
+}
+#feature div:nth-child(2) h4:hover{
+    background-color: #aabb78;
+}
+
+#feature div:nth-child(3) h4{
+    cursor: pointer;
+    background-color: #8fb1c0;
+}
+#feature div:nth-child(3) h4:hover{
+    background-color: #6798ad;
+}
+
+#feature div:nth-child(4) h4{
+    cursor: pointer;
+    background-color: #ebb7a7;
+}
+#feature div:nth-child(4) h4:hover{
+    background-color: #a57f73;
+}
+
+#feature div:nth-child(5) h4{
+    cursor: pointer;
+    background-color: #f6dbf6;
+}
+#feature div:nth-child(5) h4:hover{
+    background-color: #da9bda;
+}
+#feature div:nth-child(6) h4{
+    cursor: pointer;
+    background-color: #c3f59a;
+}
+#feature div:nth-child(6) h4:hover{
+    background-color: #96ce69;
+}
+
+
+
+
+/* Product Contanier-1 and 2.......//////////////////////////*/
+
+
+.pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    margin: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgb(7, 7, 7);
+    transition: 0.7s ease;
+    position: relative;
+}   
+.pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+.pro img:hover{
+    box-shadow: 2px 2px 10px rgb(231, 195, 195)
+
+}
+
+.des{
+    text-align: start;padding: 10px 0px;
+}
+
+.des span{
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+}
+.des h5{
+    padding-top: 5px;
+    color: #000000;
+    font-size: 14px;
+}
+.des h4{
+    color: #088178;
+    font-weight: 700;
+    padding-top: 8px;
+    font-size: 15px;
+}
+
+.star{
+    font-size: 12px;
+    color:rgb(199, 169, 0);
+    padding: 5px 0px;
+
+}   
+.cart{
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
+    font-size: 25px;
+}
+.pro-contanier{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.product-1-top{
+    margin: 40px 0px 20px 0px;
+    text-align: center;
+}
+.product-1-top h2{
+    color: #020202 !important;
+}
+
+
+
+
+
+
+
+/* /////////////////////////////////// */
+/* Banner*/
+#banner{
+    margin-top: 40px;
+    background-image: url(./img/people/bb2.jpg);
+    height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#banner h2{
+    color: #ada9a9;
+}
+#banner h2 span{
+    color: rgb(250, 64, 64);
+    font-weight: 800;
+}
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+
+
+
+/*  Sm Banner.................... */
+
+#sm-banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 80px;
+   
+
+}
+.sm1-banner{
+    background-image: url(./img/people/b17.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 45%;
+    min-width: 540px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 40px;
+    /* border-radius: 25px; */
+    box-shadow: 0px 0px 5px rgb(241, 160, 160);
+
+}
+.sm1-banner h3,h2{
+    color: #ffffff!important;
+    font-weight: 700;
+
+}
+.sm1-banner h5{
+    color: #1a1919!important;
+    font-weight: 700;
+
+}
+.sm1-banner a:hover{
+    color: #1a1919!important;
+    background-color: #088178;
+
+}
+
+/* 3Banner... Lg-banner................................ */
+#lg-banner{
+    display: flex;
+justify-content: space-between;
+align-items: center; 
+margin: 20px 40px;   
+}
+
+.lg-banner-1{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    min-width: 220px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 15px;
+
+
+}
+.lg-banner-1 h3{
+    color: #fcfcfc;
+    /* padding-bottom: 10px; */
+    font-weight: 800;
+    font-size: 25px;
+
+}
+.lg-banner-1 span{
+    color: #fc0000;
+    font-weight: 600;
+    font-size: 10x;    
+}
+
+
+/*  New-letter ........................*/
+
+
+#news-letter{
+    background-image: url(./img/people/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    text-align: start;
+    padding: 70px 80px;
+    transition: .8s ease;
+
+}
+
+ 
+.news-text h4{
+    font-size: 30px;
+    font-weight: 800;
+    color: whitesmoke;
+}
+.news-text h5 span{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(245, 211, 16);
+}
+#news-letter{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.form input{
+    height: 3rem;
+    padding: 0 2rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.form a{
+    height: 3rem;
+    padding: 0 2rem;
+    background-color: #088178;
+    color: white;
+    padding-top: 12px ;
+    border-radius: 5px;
+    
+}
+
+.form{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 40%;
+    white-space: nowrap;
+    border-radius: 5px;
+}
+
+.form input{
+    font-size: 18px;
+    font-weight: 700;
+    color: #cce7d0;
+}
+
+/*  Footer Section ...................*/
+
+
+.footer-section {
+    padding: 80px  80px;
+    display: flex;
+    /* gap: 80px; */
+    justify-content: space-between;
+   align-items: start;
+   /* min-width:  30%; */
+   background-color: #e2e2e1;
+   width: 100%;
+  height: 60vh;
+
+
+}
+
+.bottom p{
+ color: #1a1919;
+}
+
+
+
+.column-1{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.icon{
+    display: flex;
+    gap: 15px ;
+    color: #858282;
+}
+.icon i:hover{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1b1b1b;
+}
+
+.inf-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.inf-links h3{
+    font-size: 20px;
+    font-weight: 900!important;
+    margin-bottom: 10px ;
+    color: #000000;
+}
+.inf-links a{
+    font-size: 15px;
+    color: #7c7a7a;
+    
+}
+.inf-links a:hover{
+    color: #1b1b1b;
+    /* font-size: 17px; */
+}
+
+.image-style img{
+    border: 1px solid #088178;
+    border-radius:5px ;
+
+}
+
+.inf-links p{
+    font-size: 15px;
+    color: #7c7a7a
+
+}
+
+.last{
+    display: inline-block;
+    font-size: 15px;
+    color: #020202;
+    text-align: center;
+    background-color: #cccdcf;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 4px #b6b6b8;
+}
+
+
+/*  MEDIA QUERY */
+
+@media (max-width:799px) {
+    #navbar {
+        color: var(--primary--text-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        top: 0;
+        right: -1000px;
+        height: 100vh;
+        width: 300px;
+        background-color: #d3d3d3;
+        box-shadow: 0 40px 60px rgb(41, 41, 41);
+       padding: 80px 0px 10px;
+       transition: 0.3s;
+    }
+  
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #000000;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #navbar.active{
+        right: 0px;
+
+    }
+    
+    #hero {
+        /* background-image: url(./img/people/hero4.png); */
+        height: 70vh;
+        width: 100%;
+        /* background-size: cover; */
+        background-position: top 30%  right 30%;
+        padding: 0px 80px;
+    }
+    #feature {
+        justify-content: center;
+        margin-top: 20px;
+    
+    }
+    .pro-contanier {
+        margin: 10px 15px;
+       
+        justify-content: center;
+    
+    }
+    .pro {
+        margin: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #banner {
+        height: 50vh;
+       
+    }
+    .sm1-banner {
+      min-width: 100%;
+      height: 30vh;
+    }
+    #lg-banner {
+       padding: 0 20px;
+       justify-content: center;
+      
+       
+    }
+    .lg-banner-1 {
+        margin-left: 10px;
+       
+    width: 28px;
+        
+    }
+   
+    #sm-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 40px 80px;
+    }
+    .sm1-banner {
+        background-position: inherit;
+        min-width: 100%;
+        height: 40vh;
+        margin-bottom: 10px;
+
+        
+    }
+    .form {
+       
+        width: 70%;
+       
+    }
+    #news-letter {
+       flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-section {
+        padding: 80px  80px;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: start;
+        min-width: 30%;
+        background-color: #e2e2e1;
+        width: 100%;
+        height: 90vh;
+    }
+    
+    #news-letter {
+        justify-content: center;
+    }
+
+}
+
+
+
+
+/*  SHop - section start .........*/
+
+/* Shop page */
+
+#page-header{
+    background-image: url(./img/people/bb1.jpg);
+    height: 40vh;
+    width: 100%;
+    background-position: center;
+    background-size:cover ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;  
+    gap: 10px;
+    
+}
+#page-header h2{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#page-header p{
+    color: #dfe2e4;
+    font-size: 15px;
+    font-weight: 700;
+    word-spacing: 2px;
+}
+
+/* Shop LIst.................... */
+
+.Shop-list{
+    margin-top: 50px;
+}
+
+#pagination{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+
+}
+#pagination a{
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid green;
+    background-color: #088178;
+    padding: 10px 22px;
+    margin: 2px;
+    font-weight: 600;
+
+}
+
+#pagination a i{
+   font-size: 16px;
+   font-weight:600 ;
+   
+}
+/* product-details............... */
+
+.single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.small-img{
+    flex-basis:24% ;
+    cursor: pointer;
+}
+#pro-details{
+    display: flex;
+    width: 100%
+}
+.single-pro-details{
+    width: 50%;
+    margin-top: 50px;
+   
+}
+.single-pro-details h4{
+    padding: 10px 0 10px 0;
+    /* font-size: 12px; */
+    color: #3d3d3d;
+    font-weight: 900;
+   
+
+}
+.single-pro-details h6{
+    font-size: 12px;
+    color: #3d3d3d;
+    font-weight: 900;
+}
+
+
+.single-pro-details h2{
+    padding: 10px 0 0px 0;
+    font-size: 26px;
+    color: #020202!important;
+    margin-bottom: 10px;
+}
+
+.single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+}
+.single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.pro-details h3{
+    color: #221f1f;
+    padding: 10px 0px;
+    
+}
+.pro-details p{
+    color: #272424;
+    padding: 5px 0px;
+    line-height: 40px;
+}
+
+
+
+
+/*  Blog .Html */
+
+
+
+.blog-header{
+    background-image: url(./img/people/b19.jpg)!important;
+   max-width: 100%;
+   background-position: center;
+   /* margin-top: 10px; */
+   
+}
+
+
+
+/* blog section */
+#blog{
+    padding: 150px 150px 0 100px;
+    /* position: relative; */
+}
+
+.blog-box{
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+}
+.blog-img{
+    width: 50%;  
+    margin-right: 50px ;
+    padding: 50px 0px;
+
+
+}
+.blog-img img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+}
+.blog-details{
+    width: 50%;
+    
+    
+}
+.blog-details h3 {
+
+    color: #020202;
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 10px;
+    
+
+}
+.blog-details p{
+
+    color: #8a8787;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 8px;
+
+
+}
+.blog-details a{
+
+    color: #2e2626;
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 8px;
+    position: relative;
+    transition: 0.3s;
+
+
+}
+.blog-details a:hover{
+    color: #088178;
+}
+.blog-details a:hover::after{
+    background-color: #088178;
+
+}
+.blog-details a::after{
+    content: " ";
+    width: 50px;
+    height: 1px;
+    background-color: #020202;
+    position: absolute;
+    top: 12px;
+    right: -60px;
+}
+
+#blog h1{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c4c5c5;
+    z-index: -9;
+}
+
+
+
+/*  About......................................... */
+
+
+
+#page-header.about-header{
+    background-image: url(./img/people/banner.png);
+   max-width: 100%;
+   background-position: center;
+   /* margin-top: 10px; */
+   height: 50vh;
+   background-repeat: no-repeat;
+   
+
+}
+
+
+#about-head{
+    display: flex;
+    align-items: center;
+    margin: 40px 40px;
+
+}
+
+#about-head img{
+    width: 50%;
+    height: auto;
+}
+#about-head div{
+    padding-left:40px;
+}
+
+
+.about-div h3{
+    color: #020202;
+    font-size: 40px;
+    font-weight: 700;
+}
+.about-div p{
+    color: #aaa8a8;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.about-div abbr{
+    color: #585757;
+    font-size: 15px;
+    font-weight: 500;
+}
+.about-div marquee{
+    color: #1f1e1e;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+#about-app{
+    text-align: center;
+}
+
+#about-app h1{
+    font-size: 35px;
+    font-weight: 700;
+
+    
+}
+#about-app a{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(247, 95, 95);
+    
+}
+#about-app .video{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 10px auto;
+}
+#about-app .video video{
+    width: 100%;
+    height: 100%;
+    border-radius:20px 30px;
+}
+
+/*  Contact -Section */
+
+
+#contact-details{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 80px;
+    
+}
+
+
+.details{
+    max-width: 40% ;
+
+}
+#contact-details .map{
+    width: 50%;
+
+}
+#contact-details .map iframe{
+    width: 100%;
+
+}
+
+.details span{
+    color: #919191;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.details h3{
+    color: #000000;
+    font-weight: 700;
+    margin: 15px 0px;
+}
+.details h4{
+    color: #6d6c6c;
+    font-weight: 700;
+    margin: 15px 0px;
+}
+
+.contact-list li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    color: #3f3f3f;
+    
+
+}
+.contact-list p{
+    
+   color: #474747;
+    
+
+}
+
+
+#form-details form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    align-items: flex-start;
+    gap: 15px;
+    margin: 20px;
+}
+#form-details input,textarea{
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px ;
+    outline: none;
+    /* border-color: #d80909; */
+    border: 2px solid rgb(138, 138, 138);
+    font-size: 16px;
+    font-weight: 600;
+    color: #afafaf;
+}
+
+#form-details span{
+    color: #919191;
+    font-weight: 500;
+   
+   
+
+}
+.people{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#form-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgb(190, 190, 190);
+    margin: 10px 15px;
+    padding: 10px;
+
+}
+.people-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+
+}
+.people-details img{
+    padding-right: 20px;
+}
+#form-details h3{
+    color: #353535;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    word-spacing: 2px;
+
+}
+#form-details button{
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color:#088178 ;
+    border-radius: 5px;
+    /* border: 3px solid white; */
+}
+#form-details button:hover{
+    color:#050707 ;
+
+}
+.people-details-1 h3{
+    color: #000000 !important;
+    font-size: 30px !important;
+    font-weight: 700;
+
+
+}
+.people-details-1 h5{
+    color: #727272 !important;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+
+/* cart.................................. */
+
+
+#cart{
+    margin: 40px 40px;
+    text-align: center;
+
+}
+
+
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+    width: 70px;
+    margin-top: 10px;
+}
+#cart table td:nth-child(5) input{
+    width: 50px;
+    padding: 8px;
+}
+#cart thead tr td{
+    padding: 10px;
+    color: #020202;
+    font-size: 18px;
+    font-weight: 700;
+    
+
+}
+
+#cart thead  {
+    border: 1px solid rgb(236, 233, 233);
+    border-left: none;
+    border-right: navajowhite;
+    
+
+}
+#cart tbody tr td i{
+    color: #0f8a82;
+}
+
+#cart tbody tr td{
+    color: #616060;
+}
+
+
+
+#cart-add{
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 80px;
+}
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+#coupon h3{
+    padding-bottom: 15px;
+    color: #050707;
+
+}
+
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid rgb(201, 201, 201);
+
+}
+.Coupon-button ,.subtotal-button{
+    padding: 8px 25px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color:#088178 ;
+    border-radius: 3px;
+}
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+
+
+}
+#subtotal h3{
+    color: #050707;
+}
+#subtotal table{
+    width: 100%;
+    border-collapse:collapse ;
+    margin: 20px 0px;
+    color: #020202;
+}
+#subtotal table td{
+    width: 50%;
+    border: 1px solid rgb(201, 199, 199);
+    padding: 12px;
+    font-size: 13px;
+}
